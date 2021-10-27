@@ -57,8 +57,8 @@ def CardProvider (num, arq):
 	num = num.replace(" ", "")
 	num = num.replace(".", "")
 	
-	if os.path.exists(arquivo):
-		with open(arquivo, "r") as arq_json:
+	if os.path.exists(arq):
+		with open(arq, "r") as arq_json:
 			dicionario=json.load(arq_json)
 	else:
 		return "Erro! Arquivo JSON não encontrado"
